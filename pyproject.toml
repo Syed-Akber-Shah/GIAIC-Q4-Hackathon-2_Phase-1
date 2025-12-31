@@ -1,0 +1,15 @@
+[project]
+name = "in-memory-todo-app"
+version = "0.1.0"
+description = "A basic in-memory command-line todo application"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Hackathon Participant", email = "participant@example.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.13",
+]

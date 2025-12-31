@@ -84,16 +84,18 @@
 
 ### Functional Requirements
 
-- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
-- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
-- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
-- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **FR-001**: System MUST follow spec-driven development practices and implement only features specified
+- **FR-002**: System MUST be written with clean code standards including proper type hints and docstrings
+- **FR-003**: System MUST use UV for dependency management and be compatible with Python 3.13+
+- **FR-004**: System MUST implement only in-memory storage using Python lists and dictionaries
+- **FR-005**: System MUST implement the 5 basic todo features: Add Task, Delete Task, Update Task, View Task List, Mark Complete
+- **FR-006**: System MUST handle errors gracefully with clear console messages for invalid inputs/IDs
+- **FR-007**: System MUST follow the /src structure with main.py, tasks.py, and utils.py files
+- **FR-008**: System MUST be bug-free and suitable for hackathon showcase
 
 *Example of marking unclear requirements:*
 
-- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
-- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+- **FR-009**: System MUST [specific capability not in the core 5 features] - [NEEDS CLARIFICATION: violates in-memory constraint or feature completeness principle]
 
 ### Key Entities *(include if feature involves data)*
 

@@ -48,9 +48,10 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
+- [ ] T001 Create project structure per implementation plan with /src directory
+- [ ] T002 Initialize Python project with UV and pyproject.toml for Python 3.13+ compatibility
+- [ ] T003 [P] Configure linting and formatting tools to enforce clean code standards
+- [ ] T004 Set up proper type hinting and docstring requirements as per constitution
 
 ---
 
@@ -62,12 +63,12 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T005 Setup in-memory storage structure using Python lists/dicts (no database)
+- [ ] T006 [P] Implement error handling framework for console app with clear messages
+- [ ] T007 [P] Setup task model structure with ID, title, description, and status
+- [ ] T008 Create base models/entities that all stories depend on
+- [ ] T009 Configure error handling and logging infrastructure for console app
+- [ ] T010 Setup environment configuration management
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 

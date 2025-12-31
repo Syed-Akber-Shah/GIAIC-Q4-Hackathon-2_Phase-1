@@ -31,7 +31,15 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+### Compliance Verification
+- [ ] Spec-Driven Development: Implementation will strictly follow provided specifications
+- [ ] Clean Code Standards: Code will include proper type hints, docstrings, and follow single responsibility principle
+- [ ] Technology Stack Compliance: Will use UV for dependency management and Python 3.13+ features
+- [ ] In-Memory Storage Constraint: Will implement only in-memory storage using Python lists/dicts
+- [ ] Feature Completeness: Will implement only the 5 basic todo features as specified
+- [ ] Error Handling: Will include graceful error handling with clear console messages
+- [ ] Development Structure: Will follow /src structure with main.py, tasks.py, and utils.py
+- [ ] Quality Assurance: Will ensure bug-free, demo-ready code for hackathon showcase
 
 ## Project Structure
 

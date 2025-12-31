@@ -1,55 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A (initial creation) → 1.0.0
+Modified principles: N/A
+Added sections: All principles and sections for The Evolution of Todo project
+Removed sections: N/A
+Templates requiring updates: 
+- ✅ .specify/templates/plan-template.md - updated to align with principles
+- ✅ .specify/templates/spec-template.md - updated to align with requirements
+- ✅ .specify/templates/tasks-template.md - updated to reflect new principles
+- ⚠️  README.md - requires update to reference new principles (pending)
+Follow-up TODOs: None
+-->
+
+# The Evolution of Todo Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Spec-Driven Development
+All code implementations must be based strictly on provided specifications. No features should be added without explicit specification. This ensures alignment with project requirements and prevents scope creep.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Clean Code Standards
+Write readable, modular code with meaningful names, comprehensive docstrings, and proper type hints. Apply the single responsibility principle - separate task logic from UI components. Avoid code redundancy and maintain high code quality.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Technology Stack Compliance
+Use UV for dependency management and virtual environments with pyproject.toml configuration. All code must be compatible with Python 3.13+ and leverage modern Python features such as improved type hints. Follow Spec-Kit Plus workflows for specification management and AI-assisted development.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### In-Memory Storage Constraint
+Implement only in-memory storage using Python lists and dictionaries. Do not introduce external dependencies for persistence unless explicitly specified. This maintains simplicity for the initial console application phase.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Feature Completeness
+Implement only the 5 basic todo features: Add Task (with title, description, and auto-ID), Delete Task (by ID), Update Task (title/description by ID), View Task List (with status indicators [ ]/[X]), and Mark Complete (toggle by ID). No additional features should be implemented beyond these requirements.
 
-### [PRINCIPLE_6_NAME]
+### Error Handling
+Implement graceful error handling for invalid inputs and IDs with clear, user-friendly console messages. Ensure the application handles edge cases without crashing.
 
+## Development Structure
+Code must be organized in the /src directory with the following structure: main.py for the menu loop, tasks.py for business logic, and utils.py for helper functions if needed. Follow Python best practices including f-strings, list comprehensions, and enums for status management where appropriate. The console application must run in a continuous loop until the user selects 'exit'.
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Quality Assurance
+All code must be bug-free and mentally tested before implementation. Prioritize simplicity for the MVP while ensuring functionality. Apply ethical and quality standards to produce a demo-ready console application suitable for hackathon showcase. Use proper type hints, docstrings, and follow Python conventions for maintainability.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all development practices for The Evolution of Todo project. All implementations must comply with these principles. Amendments to this constitution require explicit documentation and approval. All pull requests and code reviews must verify compliance with these principles.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-01-01 | **Last Amended**: 2025-01-01
